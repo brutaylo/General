@@ -1,0 +1,20 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             x:Class="WeatherApp.MainPage">
+
+    <StackLayout Padding="10">
+        <Label Text="Local Weather" 
+               FontSize="24"
+               HorizontalOptions="Center"/>
+        <Label x:Name="TempLabel" 
+               Text="Temperature: Loading..."
+               FontSize="18"
+               HorizontalOptions="Center"/>
+        <Label x:Name="ConditionLabel"
+               Text="Condition: Loading..."
+               FontSize="18"
+               HorizontalOptions="Center"/>
+        <Button Text="Update Weather"
+                Clicked="OnUpdateWeatherClicked" />
+    </StackLayout>
+
+</ContentPage>
